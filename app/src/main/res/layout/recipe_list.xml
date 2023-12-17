@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/rlName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipe Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/ShapeAppearance.Material3.Corner.Large"/>
+
+    <TextView
+        android:id="@+id/rlIngedient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Recipe Name"
+        android:textAppearance="@style/ShapeAppearance.Material3.Corner.Medium"/>
+    <TextView
+        android:id="@+id/rlInstruction"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipe Name"
+        android:textAppearance="@style/ShapeAppearance.Material3.Corner.Medium"/>
+</LinearLayout>

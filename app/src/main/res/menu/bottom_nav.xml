@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btniRecipes"
+        android:title="Recipes"
+        android:icon="@drawable/baseline_chrome_reader_mode_24"/>
+    <item
+        android:id="@+id/btniMeal"
+        android:title="Meal Planner"
+        android:icon="@drawable/baseline_fastfood_24"/>
+    <item
+        android:id="@+id/btniBlog"
+        android:title="Blog"
+        android:icon="@drawable/baseline_notes_24"/>
+</menu>

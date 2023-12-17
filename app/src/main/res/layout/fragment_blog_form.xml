@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+android:layout_margin="20dp"
+    android:padding="10dp"
+    >
+
+    <EditText
+        android:id="@+id/editBlogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:hint="Blog Title"/>
+
+    <EditText
+        android:id="@+id/editBlogDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:hint="Blog Description"/>
+    <Button
+        android:id="@+id/btnAddBlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="Add Blog"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:text="Cancel"/>
+
+</LinearLayout>

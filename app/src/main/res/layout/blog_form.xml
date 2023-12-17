@@ -1,0 +1,35 @@
+<!-- recipe_form.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:textSize="14pt"
+        android:id="@+id/editBlogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipe Title"/>
+
+    <EditText
+        android:id="@+id/editBlogDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14pt"
+        android:hint="Ingredients"/>
+
+
+    <Button
+        android:id="@+id/btnAddBlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Blog"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+</LinearLayout>
