@@ -2,10 +2,6 @@ package com.miu.foodiepal_culinarycompanion
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.miu.foodiepal_culinarycompanion.databinding.ActivityTabBinding
@@ -51,19 +47,20 @@ class TabActivity : AppCompatActivity() {
 
 
 
-        tabbinding.btmNav.setOnNavigationItemReselectedListener  {item->
+        tabbinding.btmNav.setOnItemSelectedListener  {item->
             when(item.itemId){
-                R.id.btniRecipes -> replaceFragment(RecipesFragment())
-                R.id.btniMeal -> replaceFragment(MealPlannerFragment())
-                R.id.btniBlog -> replaceFragment(BlogFragment())
+                R.id.btniRecipes -> tabbinding.pager.setCurrentItem(0, true)
+                R.id.btniMeal -> tabbinding.pager.setCurrentItem(1, true)
+                R.id.btniBlog -> tabbinding.pager.setCurrentItem(2, true)
             }
             true
         }
     }
+    /*
     private fun replaceFragment(fragment: Fragment){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.tab_layout, fragment)
         fragmentTransaction.commit()
-    }
+    }*/
 }
